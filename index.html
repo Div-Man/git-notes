@@ -1,0 +1,99 @@
+версия программы - git version
+
+git config --global user.name "Kaharov Dmitriy"
+git config --global user.email dima@yandex.ru
+
+git config --list
+
+cd /f/
+
+ls
+
+mkdir gitproject
+
+git init
+
+notepad search.php
+
+git status (untracked - не отслеживаемые файлы)
+
+git add search.php
+
+git log - список комитов
+
+notepad README - откроет текстовый редпктор 
+
+git add README.txt
+git add search.php
+
+git commit -m "Second search version"
+
+удалит файл - rm README.txt
+
+
+
+
+amend - вносить поправки (отредактируется последний комит)
+
+git commit --amend -m "3 version Modified"
+
+
+
+удаляем из стейч области - git reset HEAD new.txt
+теперь new.txt будет не отслеживаемый 
+
+
+
+вернуть прежнюю версию  - git checkout -- new.txt
+
+игнорирование - notepad .gitignore 
+потом открыть его и писать файлы с каждой новой строчки 
+а для папки в конце писать / 
+
+HEAD означает текущая ветка 
+
+
+--------------------------
+
+обновить на локалке из репозитория git pull
+
+
+
+//////////////////////////////////
+
+
+1. Напишите команду клонирования проекта
+
+2. Как узнать в какой вы сейчас ветке
+
+3. Как создать новую ветку
+
+4. Как переключиться в новую ветку
+
+5. Как добавить файл для наблюдения
+
+6. Как закоммитить
+
+7. Как выгрузить изменения в удаленное хранилище
+
+8. Как загрузить изменения из удаленного хранилища
+
+
+
+git clone
+ 
+git branch, напротив текущей ветки будет звёздочка
+ 
+git checkout -b style
+ 
+git checkout style
+ 
+git add index.php
+ 
+git commit -m
+ 
+git commit -m "message"
+ 
+git push
+ 
+git fetch [имя удал. сервера]
